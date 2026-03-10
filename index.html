@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flashcard App</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+<h1>My Flashcards</h1>
+
+<div id="card-container">
+  <div id="card">
+    <p id="question">Question appears here</p>
+    <p id="answer" style="display:none;">Answer appears here</p>
+  </div>
+
+  <div id="controls">
+    <button onclick="showAnswer()">Show Answer</button>
+    <button onclick="nextCard()">Next Card</button>
+    <button onclick="addCardPrompt()">Add Card</button>
+    <button onclick="editCardPrompt()">Edit Card</button>
+    <button onclick="deleteCard()">Delete Card</button>
+    <button onclick="toggleCramMode()">Cram Mode</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
